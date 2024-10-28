@@ -1,0 +1,129 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+
+header {
+    background-color: #0d47a1; 
+    padding: 1em 0;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+header li {
+    margin: 0 15px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: #ffca28;
+}
+
+
+.hero {
+    background: linear-gradient(to right, #0d47a1, #1976d2);
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 2em;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.cta-button {
+    background-color: #ffca28;
+    color: #0d47a1;
+    border: none;
+    padding: 1em 2em;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #ffc107;
+    transform: scale(1.05); 
+}
+
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin: 3em 0;
+    padding: 2em;
+    background-color: #e3f2fd; 
+}
+
+.feature {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    text-align: center;
+    width: 30%;
+    transition: transform 0.2s;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+}
+
+.feature img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+
+footer {
+    background-color: #0d47a1;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        width: 80%;
+        margin-bottom: 1em;
+    }
+}
